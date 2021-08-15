@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import rospy, cv2, cv_bridge
@@ -32,7 +30,7 @@ class Tracking:
 
     def __init__(self):
       self.bridge = cv_bridge.CvBridge()
-      self.image_sub = rospy.Subscriber('/camera/dev/vedio0', Image, self.image_callback)
+      self.image_sub = rospy.Subscriber('/usb_cam/image_raw', Image, self.image_callback)
 	  #'/camera/color/image_raw'
       self.cmd_vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
 	  #針對cmd_vel這個topic發訊息，格式為twist，一次最多一筆資料

@@ -5,9 +5,9 @@
     <arg name="param_file_name" default="default" doc="Specify a param file. ex:megaman." />
 
 
-    <!-- ball_chaser -->
+    <!-- ball_chaser_tutorial -->
     <group ns="$(arg veh)">
-        <node pkg="ball_chaser" type="ball_chaser.py" name="keyboard" output="screen"/>
+        <node pkg="ball_chaser_tutorial" type="ball_chaser_tutorial.py" name="keyboard" output="screen"/>
     </group>
 
     <!-- keyboard_mapper -->

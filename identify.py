@@ -53,7 +53,7 @@ class Tracking:
 			
         cv2.namedWindow("window2", cv2.WINDOW_NORMAL)
         cv2.imshow("window2", image)
-        
+        cv2.waitKey(10)
 if __name__ == '__main__':
 
     try:
